@@ -535,93 +535,93 @@
 ## 数据结构
 
 - ### 数组（Arrays）
-    - [ ] 介绍：
+    - [x] 介绍：
         - [数组 CS50 哈佛大学](https://www.youtube.com/watch?v=tI_tIZFyKBw&t=3009s)
         - [数组（视频）](https://www.coursera.org/lecture/data-structures/arrays-OsBSF)
         - [加州大学伯克利分校CS61B - 线性和多维数组（视频）](https://archive.org/details/ucberkeley_webcast_Wp8oiO_CZZE)（从15分32秒开始）
         - [动态数组（视频）](https://www.coursera.org/lecture/data-structures/dynamic-arrays-EwbnV)
         - [嵌套数组（视频）](https://www.youtube.com/watch?v=1jtrQqYpt7g)
-    - [ ] 实现一个动态数组（可自动调整大小的可变数组）：
-        - [ ] 练习使用数组和指针去编码，并且指针是通过计算去跳转而不是使用索引
-        - [ ] 通过分配内存来新建一个原生数据型数组
+    - [x] 实现一个动态数组（可自动调整大小的可变数组）：
+        - [x] 练习使用数组和指针去编码，并且指针是通过计算去跳转而不是使用索引
+        - [x] 通过分配内存来新建一个原生数据型数组
             - 可以使用 int 类型的数组，但不能使用其语法特性
             - 从大小为16或更大的数（使用2的倍数 —— 16、32、64、128）开始编写
-        - [ ] size() —— 数组元素的个数
-        - [ ] capacity() —— 可容纳元素的个数
-        - [ ] is_empty()
-        - [ ] at(index) —— 返回对应索引的元素，且若索引越界则愤然报错
-        - [ ] push(item)
-        - [ ] insert(index, item) —— 在指定索引中插入元素，并把后面的元素依次后移
-        - [ ] prepend(item) —— 可以使用上面的 insert 函数，传参 index 为 0
-        - [ ] pop() —— 删除在数组末端的元素，并返回其值
-        - [ ] delete(index) —— 删除指定索引的元素，并把后面的元素依次前移
-        - [ ] remove(item) —— 删除指定值的元素，并返回其索引（即使有多个元素）
-        - [ ] find(item) —— 寻找指定值的元素并返回其中第一个出现的元素其索引，若未找到则返回 -1
-        - [ ] resize(new_capacity) // 私有函数
+        - [x] size() —— 数组元素的个数
+        - [x] capacity() —— 可容纳元素的个数
+        - [x] is_empty()
+        - [x] at(index) —— 返回对应索引的元素，且若索引越界则愤然报错
+        - [x] push(item)
+        - [x] insert(index, item) —— 在指定索引中插入元素，并把后面的元素依次后移
+        - [x] prepend(item) —— 可以使用上面的 insert 函数，传参 index 为 0
+        - [x] pop() —— 删除在数组末端的元素，并返回其值
+        - [x] delete(index) —— 删除指定索引的元素，并把后面的元素依次前移
+        - [x] remove(item) —— 删除指定值的元素，并返回其索引（即使有多个元素）
+        - [x] find(item) —— 寻找指定值的元素并返回其中第一个出现的元素其索引，若未找到则返回 -1
+        - [x] resize(new_capacity) // 私有函数
             - 若数组的大小到达其容积，则变大一倍
             - 获取元素后，若数组大小为其容积的1/4，则缩小一半
-    - [ ] 时间复杂度
+    - [x] 时间复杂度
         - 在数组末端增加/删除、定位、更新元素，只允许占 O(1) 的时间复杂度（平摊（amortized）去分配内存以获取更多空间）
         - 在数组任何地方插入/移除元素，只允许 O(n) 的时间复杂度
-    - [ ] 空间复杂度
+    - [x] 空间复杂度
         - 因为在内存中分配的空间邻近，所以有助于提高性能
         - 空间需求 = （大于或等于 n 的数组容积）* 元素的大小。即便空间需求为 2n，其空间复杂度仍然是 O(n)
 
 - ### 链表（Linked Lists）
-    - [ ] 介绍：
-        - [ ] [链表 CS50 哈佛大学](https://www.youtube.com/watch?v=2T-A_GFuoTo&t=650s) - 这样建立了直观感。
-        - [ ] [单链表（视频）](https://www.coursera.org/lecture/data-structures/singly-linked-lists-kHhgK)
-        - [ ] [CS 61B - 链表1（视频）](https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0)
-        - [ ] [CS 61B - 链表 2（视频）](https://archive.org/details/ucberkeley_webcast_-c4I3gFYe3w)
-        - [ ] [[复习] 4分钟了解链表（视频）](https://youtu.be/F8AbOfQwl1c)
-    - [ ] [C代码（视频）](https://www.youtube.com/watch?v=QN6FPiD0Gzo)
+    - [x] 介绍：
+        - [x] [链表 CS50 哈佛大学](https://www.youtube.com/watch?v=2T-A_GFuoTo&t=650s) - 这样建立了直观感。
+        - [x] [单链表（视频）](https://www.coursera.org/lecture/data-structures/singly-linked-lists-kHhgK)
+        - [x] [CS 61B - 链表1（视频）](https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0)
+        - [x] [CS 61B - 链表 2（视频）](https://archive.org/details/ucberkeley_webcast_-c4I3gFYe3w)
+        - [x] [[复习] 4分钟了解链表（视频）](https://youtu.be/F8AbOfQwl1c)
+    - [x] [C代码（视频）](https://www.youtube.com/watch?v=QN6FPiD0Gzo)
             - 不是整个视频，只是关于Node结构和内存分配的部分。
-    - [ ] 链表 vs 数组：
+    - [x] 链表 vs 数组：
         - [核心链表与数组（视频）](https://www.coursera.org/lecture/data-structures-optimizing-performance/core-linked-lists-vs-arrays-rjBs9)
         - [在现实世界中，链表与数组的比较（视频）](https://www.coursera.org/lecture/data-structures-optimizing-performance/in-the-real-world-lists-vs-arrays-QUaUd)
-    - [ ] [为什么你需要避免使用链表（视频）](https://www.youtube.com/watch?v=YQs6IC-vgmo)
-    - [ ] 的确：你需要关于“指向指针的指针”的相关知识：（因为当你传递一个指针到一个函数时，
+    - [x] [为什么你需要避免使用链表（视频）](https://www.youtube.com/watch?v=YQs6IC-vgmo)
+    - [x] 的确：你需要关于“指向指针的指针”的相关知识：（因为当你传递一个指针到一个函数时，
       该函数可能会改变指针所指向的地址）该页只是为了让你了解“指向指针的指针”这一概念。
       但我并不推荐这种链式遍历的风格。因为，这种风格的代码，其可读性和可维护性太低。
         - [指向指针的指针](https://www.eskimo.com/~scs/cclass/int/sx8.html)
-    - [ ] 实现（我实现了使用尾指针以及没有使用尾指针这两种情况）：
-        - [ ] size() —— 返回链表中数据元素的个数
-        - [ ] empty() —— 若链表为空则返回一个布尔值 true
-        - [ ] value_at(index) —— 返回第 n 个元素的值（从0开始计算）
-        - [ ] push_front(value) —— 添加元素到链表的首部
-        - [ ] pop_front() —— 删除首部元素并返回其值
-        - [ ] push_back(value) —— 添加元素到链表的尾部
-        - [ ] pop_back() —— 删除尾部元素并返回其值
-        - [ ] front() —— 返回首部元素的值
-        - [ ] back() —— 返回尾部元素的值
-        - [ ] insert(index, value) —— 插入值到指定的索引，并把当前索引的元素指向到新的元素
-        - [ ] erase(index) —— 删除指定索引的节点
-        - [ ] value_n_from_end(n) —— 返回倒数第 n 个节点的值
-        - [ ] reverse() —— 逆序链表
-        - [ ] remove_value(value) —— 删除链表中指定值的第一个元素
-    - [ ] 双向链表
+    - [x] 实现（我实现了使用尾指针以及没有使用尾指针这两种情况）：
+        - [x] size() —— 返回链表中数据元素的个数
+        - [x] empty() —— 若链表为空则返回一个布尔值 true
+        - [x] value_at(index) —— 返回第 n 个元素的值（从0开始计算）
+        - [x] push_front(value) —— 添加元素到链表的首部
+        - [x] pop_front() —— 删除首部元素并返回其值
+        - [x] push_back(value) —— 添加元素到链表的尾部
+        - [x] pop_back() —— 删除尾部元素并返回其值
+        - [x] front() —— 返回首部元素的值
+        - [x] back() —— 返回尾部元素的值
+        - [x] insert(index, value) —— 插入值到指定的索引，并把当前索引的元素指向到新的元素
+        - [x] erase(index) —— 删除指定索引的节点
+        - [x] value_n_from_end(n) —— 返回倒数第 n 个节点的值
+        - [x] reverse() —— 逆序链表
+        - [x] remove_value(value) —— 删除链表中指定值的第一个元素
+    - [x] 双向链表
         - [介绍（视频）](https://www.coursera.org/learn/data-structures/lecture/jpGKD/doubly-linked-lists)
         - 并不需要实现
 
 - ### 堆栈（Stack）
-    - [ ] [堆栈（视频）](https://www.coursera.org/learn/data-structures/lecture/UdKzQ/stacks)
-    - [ ] [[Review] Stacks in 3 minutes (video)](https://youtu.be/KcT3aVgrrpU)
-    - [ ] 可以不实现，因为使用数组来实现是微不足道的事
+    - [x] [堆栈（视频）](https://www.coursera.org/learn/data-structures/lecture/UdKzQ/stacks)
+    - [x] [[Review] Stacks in 3 minutes (video)](https://youtu.be/KcT3aVgrrpU)
+    - [x] 可以不实现，因为使用数组来实现是微不足道的事
 
 - ### 队列（Queue）
-    - [ ] [队列（视频）](https://www.coursera.org/learn/data-structures/lecture/EShpq/queue)
-    - [ ] [原型队列/先进先出（FIFO）](https://en.wikipedia.org/wiki/Circular_buffer)
-    - [ ] [[Review] Queues in 3 minutes (video)](https://youtu.be/D6gu-_tmEpQ)
-    - [ ] 使用含有尾部指针的链表来实现:
+    - [x] [队列（视频）](https://www.coursera.org/learn/data-structures/lecture/EShpq/queue)
+    - [x] [原型队列/先进先出（FIFO）](https://en.wikipedia.org/wiki/Circular_buffer)
+    - [x] [[Review] Queues in 3 minutes (video)](https://youtu.be/D6gu-_tmEpQ)
+    - [x] 使用含有尾部指针的链表来实现:
         - enqueue(value) —— 在尾部添加值
         - dequeue() —— 删除最早添加的元素并返回其值（首部元素）
         - empty()
-    - [ ] 使用固定大小的数组实现：
+    - [x] 使用固定大小的数组实现：
         - enqueue(value) —— 在可容的情况下添加元素到尾部
         - dequeue() —— 删除最早添加的元素并返回其值
         - empty()
         - full()
-    - [ ] 花销：
+    - [x] 花销：
         - 在糟糕的实现情况下，使用链表所实现的队列，其入列和出列的时间复杂度将会是 O(n)。
         因为，你需要找到下一个元素，以致循环整个队列
         - enqueue：O(1)（平摊（amortized）、链表和数组 [探测（probing）]）
@@ -629,25 +629,25 @@
         - empty：O(1)（链表和数组）
 
 - ### 哈希表（Hash table）
-    - [ ] 视频：
-        - [ ] [链式哈希表（视频）](https://www.youtube.com/watch?v=0M_kIqhwbFo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=8)
-        - [ ] [Table Doubling 和 Karp-Rabin（视频）](https://www.youtube.com/watch?v=BRO7mVIFt08&index=9&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
-        - [ ] [Open Addressing 和密码型哈希（Cryptographic Hashing）（视频）](https://www.youtube.com/watch?v=rvdJDijO2Ro&index=10&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
-        - [ ] [PyCon 2010：强大的字典（视频）](https://www.youtube.com/watch?v=C4Kc8xzcA68)
-        - [ ] [PyCon 2017：字典更强大（视频）](https://www.youtube.com/watch?v=66P5FMkWoVU)
-        - [ ] [(高级) 随机化：通用和完美哈希（视频）](https://www.youtube.com/watch?v=z0lJ2k0sl1g&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=11)
-        - [ ] [(进阶)完美哈希（Perfect hashing）（视频）](https://www.youtube.com/watch?v=N0COwN14gt0&list=PL2B4EEwhKD-NbwZ4ezj7gyc_3yNrojKM9&index=4)
-        - [ ] [[复习]4分钟了解哈希表（视频）](https://youtu.be/knV86FlSXJ8)
+    - [x] 视频：
+        - [x] [链式哈希表（视频）](https://www.youtube.com/watch?v=0M_kIqhwbFo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=8)
+        - [x] [Table Doubling 和 Karp-Rabin（视频）](https://www.youtube.com/watch?v=BRO7mVIFt08&index=9&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
+        - [x] [Open Addressing 和密码型哈希（Cryptographic Hashing）（视频）](https://www.youtube.com/watch?v=rvdJDijO2Ro&index=10&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
+        - [x] [PyCon 2010：强大的字典（视频）](https://www.youtube.com/watch?v=C4Kc8xzcA68)
+        - [x] [PyCon 2017：字典更强大（视频）](https://www.youtube.com/watch?v=66P5FMkWoVU)
+        - [x] [(高级) 随机化：通用和完美哈希（视频）](https://www.youtube.com/watch?v=z0lJ2k0sl1g&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=11)
+        - [x] [(进阶)完美哈希（Perfect hashing）（视频）](https://www.youtube.com/watch?v=N0COwN14gt0&list=PL2B4EEwhKD-NbwZ4ezj7gyc_3yNrojKM9&index=4)
+        - [x] [[复习]4分钟了解哈希表（视频）](https://youtu.be/knV86FlSXJ8)
 
-    - [ ] 在线课程：
-        - [ ] [核心哈希表（视频）](https://www.coursera.org/lecture/data-structures-optimizing-performance/core-hash-tables-m7UuP)
-        - [ ] [数据结构（视频）](https://www.coursera.org/learn/data-structures/home/week/4)
-        - [ ] [电话簿问题（视频）](https://www.coursera.org/lecture/data-structures/phone-book-problem-NYZZP)
-        - [ ] 分布式哈希表：
+    - [x] 在线课程：
+        - [x] [核心哈希表（视频）](https://www.coursera.org/lecture/data-structures-optimizing-performance/core-hash-tables-m7UuP)
+        - [x] [数据结构（视频）](https://www.coursera.org/learn/data-structures/home/week/4)
+        - [x] [电话簿问题（视频）](https://www.coursera.org/lecture/data-structures/phone-book-problem-NYZZP)
+        - [x] 分布式哈希表：
             - [Dropbox中的即时上传和存储优化（视频）](https://www.coursera.org/lecture/data-structures/instant-uploads-and-storage-optimization-in-dropbox-DvaIb)
             - [分布式哈希表（视频）](https://www.coursera.org/lecture/data-structures/distributed-hash-tables-tvH8H)
 
-    - [ ] 使用线性探测法的数组实现
+    - [x] 使用线性探测法的数组实现
         - hash(k, m) - m是哈希表的大小
         - add(key, value) - 如果键已存在，则更新值
         - exists(key) - 检查键是否存在
@@ -657,48 +657,48 @@
 ## 更多的知识
 
 - ### 二分查找（Binary search）
-    - [ ] [二分查找（视频）](https://www.youtube.com/watch?v=D5SrAga1pno)
-    - [ ] [二分查找（视频）](https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)
-    - [ ] [详情](https://www.topcoder.com/community/data-science/data-science-tutorials/binary-search/)
-    - [ ] [蓝图](https://leetcode.com/discuss/general-discussion/786126/python-powerful-ultimate-binary-search-template-solved-many-problems)   
-    - [ ] [【复习】四分钟二分查找(视频)](https://youtu.be/fDKIpRe8GW4)
-    - [ ] 实现：
+    - [x] [二分查找（视频）](https://www.youtube.com/watch?v=D5SrAga1pno)
+    - [x] [二分查找（视频）](https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)
+    - [x] [详情](https://www.topcoder.com/community/data-science/data-science-tutorials/binary-search/)
+    - [x] [蓝图](https://leetcode.com/discuss/general-discussion/786126/python-powerful-ultimate-binary-search-template-solved-many-problems)   
+    - [x] [【复习】四分钟二分查找(视频)](https://youtu.be/fDKIpRe8GW4)
+    - [x] 实现：
         - 二分查找（在一个已排序好的整型数组中查找）
         - 迭代式二分查找
 
 - ### 按位运算（Bitwise operations）
-    - [ ] [Bits 速查表](https://github.com/jwasham/coding-interview-university/blob/main/extras/cheat%20sheets/bits-cheat-sheet.pdf) ── 你需要知道大量2的幂数值（从2^1 到 2^16 及 2^32）
-    - [ ] 好好理解位操作符的含义：&、|、^、~、>>、<<
-        - [ ] [字码（words）](https://en.wikipedia.org/wiki/Word_(computer_architecture))
-        - [ ] 好的介绍：
+    - [x] [Bits 速查表](https://github.com/jwasham/coding-interview-university/blob/main/extras/cheat%20sheets/bits-cheat-sheet.pdf) ── 你需要知道大量2的幂数值（从2^1 到 2^16 及 2^32）
+    - [x] 好好理解位操作符的含义：&、|、^、~、>>、<<
+        - [x] [字码（words）](https://en.wikipedia.org/wiki/Word_(computer_architecture))
+        - [x] 好的介绍：
             [位操作（视频）](https://www.youtube.com/watch?v=7jkIUgLC29I)
-        - [ ] [C 语言编程教程 2-10：按位运算（视频）](https://www.youtube.com/watch?v=d0AwjSpNXR0)
-        - [ ] [位操作](https://en.wikipedia.org/wiki/Bit_manipulation)
-        - [ ] [按位运算](https://en.wikipedia.org/wiki/Bitwise_operation)
-        - [ ] [Bithacks](https://graphics.stanford.edu/~seander/bithacks.html)
-        - [ ] [位元抚弄者（The Bit Twiddler）](http://bits.stephan-brumme.com/)
-        - [ ] [交互式位元抚弄者（The Bit Twiddler Interactive）](http://bits.stephan-brumme.com/interactive.html)
-        - [ ] [位操作技巧（Bit Hacks）（视频）](https://www.youtube.com/watch?v=ZusiKXcz_ac)
-        - [ ] [练习位操作](https://pconrad.github.io/old_pconrad_cs16/topics/bitOps/)
-    - [ ] 一补数和补码
+        - [x] [C 语言编程教程 2-10：按位运算（视频）](https://www.youtube.com/watch?v=d0AwjSpNXR0)
+        - [x] [位操作](https://en.wikipedia.org/wiki/Bit_manipulation)
+        - [x] [按位运算](https://en.wikipedia.org/wiki/Bitwise_operation)
+        - [x] [Bithacks](https://graphics.stanford.edu/~seander/bithacks.html)
+        - [x] [位元抚弄者（The Bit Twiddler）](http://bits.stephan-brumme.com/)
+        - [x] [交互式位元抚弄者（The Bit Twiddler Interactive）](http://bits.stephan-brumme.com/interactive.html)
+        - [x] [位操作技巧（Bit Hacks）（视频）](https://www.youtube.com/watch?v=ZusiKXcz_ac)
+        - [x] [练习位操作](https://pconrad.github.io/old_pconrad_cs16/topics/bitOps/)
+    - [x] 一补数和补码
         - [二进制：利 & 弊（为什么我们要使用补码）（视频）](https://www.youtube.com/watch?v=lKTsv6iVxV4)
         - [一补数（1s Complement）](https://en.wikipedia.org/wiki/Ones%27_complement)
         - [补码（2s Complement）](https://en.wikipedia.org/wiki/Two%27s_complement)
-    - [ ] 计算置位（Set Bits）
+    - [x] 计算置位（Set Bits）
         - [计算一个字节中置位（Set Bits）的四种方式（视频）](https://youtu.be/Hzuzo9NJrlc)
         - [计算比特位](https://graphics.stanford.edu/~seander/bithacks.html#CountBitsSetKernighan)
         - [如何在一个 32 位的整型中计算置位（Set Bits）的数量](http://stackoverflow.com/questions/109023/how-to-count-the-number-of-set-bits-in-a-32-bit-integer)
-    - [ ] 交换值：
+    - [x] 交换值：
         - [交换（Swap）](http://bits.stephan-brumme.com/swap.html)
-    - [ ] 绝对值：
+    - [x] 绝对值：
         - [绝对整型（Absolute Integer）](http://bits.stephan-brumme.com/absInteger.html)
 
 ## 树（Trees）
 
 - ### 树-介绍
-    - [ ] [树的介绍（视频）](https://www.coursera.org/learn/data-structures/lecture/95qda/trees)
-    - [ ] [树遍历（视频）](https://www.coursera.org/lecture/data-structures/tree-traversal-fr51b)
-    - [ ] [BFS（广度优先搜索）和DFS（深度优先搜索）（视频）](https://www.youtube.com/watch?v=uWL6FJhq5fM)
+    - [x] [树的介绍（视频）](https://www.coursera.org/learn/data-structures/lecture/95qda/trees)
+    - [x] [树遍历（视频）](https://www.coursera.org/lecture/data-structures/tree-traversal-fr51b)
+    - [x] [BFS（广度优先搜索）和DFS（深度优先搜索）（视频）](https://www.youtube.com/watch?v=uWL6FJhq5fM)
         - BFS 笔记
             - 层次遍历（BFS，使用队列）
             - 时间复杂度： O(n)
@@ -711,45 +711,45 @@
             - 中序遍历（DFS：左、节点本身、右）
             - 后序遍历（DFS：左、右、节点本身）
             - 先序遍历（DFS：节点本身、左、右）
-    - [ ] [[复习]4分钟内的广度优先搜索（视频）](https://youtu.be/HZ5YTanv5QE)
-    - [ ] [[复习] 4分钟内的深度优先搜索（视频）](https://youtu.be/Urx87-NMm6c)
-    - [ ] [[复习]11分钟内的树遍历（播放列表）（视频）](https://www.youtube.com/playlist?list=PL9xmBV_5YoZO1JC2RgEi04nLy6D-rKk6b)
+    - [x] [[复习]4分钟内的广度优先搜索（视频）](https://youtu.be/HZ5YTanv5QE)
+    - [x] [[复习] 4分钟内的深度优先搜索（视频）](https://youtu.be/Urx87-NMm6c)
+    - [x] [[复习]11分钟内的树遍历（播放列表）（视频）](https://www.youtube.com/playlist?list=PL9xmBV_5YoZO1JC2RgEi04nLy6D-rKk6b)
 
 - ### 二叉查找树（Binary search trees）：BSTs
-    - [ ] [二叉搜索树复习（视频）](https://www.youtube.com/watch?v=x6At0nzX92o&index=1&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)
-    - [ ] [介绍（视频）](https://www.coursera.org/learn/data-structures/lecture/E7cXP/introduction)
-    - [ ] [MIT（视频）](https://www.youtube.com/watch?v=9Jry5-82I68)
+    - [x] [二叉搜索树复习（视频）](https://www.youtube.com/watch?v=x6At0nzX92o&index=1&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)
+    - [x] [介绍（视频）](https://www.coursera.org/learn/data-structures/lecture/E7cXP/introduction)
+    - [x] [MIT（视频）](https://www.youtube.com/watch?v=9Jry5-82I68)
     - C/C++:
-        - [ ] [二叉查找树 —— 在 C/C++ 中实现（视频）](https://www.youtube.com/watch?v=COZK7NATh4k&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=28)
-        - [ ] [BST 的实现 —— 在堆栈和堆中的内存分配（视频）](https://www.youtube.com/watch?v=hWokyBoo0aI&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=29)
-        - [ ] [在二叉查找树中找到最小和最大的元素（视频）](https://www.youtube.com/watch?v=Ut90klNN264&index=30&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
-        - [ ] [寻找二叉树的高度（视频）](https://www.youtube.com/watch?v=_pnqMz5nrRs&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=31)
-        - [ ] [二叉树的遍历 —— 广度优先和深度优先策略（视频）](https://www.youtube.com/watch?v=9RHO6jU--GU&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=32)
-        - [ ] [二叉树：层序遍历（视频）](https://www.youtube.com/watch?v=86g8jAQug04&index=33&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
-        - [ ] [二叉树的遍历：先序、中序、后序（视频）](https://www.youtube.com/watch?v=gm8DUJJhmY4&index=34&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
-        - [ ] [判断一棵二叉树是否为二叉查找树（视频）](https://www.youtube.com/watch?v=yEwSGhSsT0U&index=35&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
-        - [ ] [从二叉查找树中删除一个节点（视频）](https://www.youtube.com/watch?v=gcULXE7ViZw&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=36)
-        - [ ] [二叉查找树中序遍历的后继者（视频）](https://www.youtube.com/watch?v=5cPbNCrdotA&index=37&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
-    - [ ] 实现：
-        - [ ] [insert    // 将值插入树中](https://leetcode.com/problems/insert-into-a-binary-search-tree/submissions/987660183/)
-        - [ ] get_node_count // 查找树上的节点数
-        - [ ] print_values // 从小到大打印树中节点的值
-        - [ ] delete_tree
-        - [ ] is_in_tree // 如果值存在于树中则返回 true
-        - [ ] [get_height // 以节点为单位返回高度（单个节点的高度为1）](https://www.geeksforgeeks.org/find-the-maximum-depth-or-height-of-a-tree/)
-        - [ ] get_min   // 返回树上的最小值
-        - [ ] get_max   // 返回树上的最大值
-        - [ ] is_binary_search_tree
-        - [ ] delete_value
-        - [ ] get_successor // 返回给定值的后继者，若没有则返回-1
+        - [x] [二叉查找树 —— 在 C/C++ 中实现（视频）](https://www.youtube.com/watch?v=COZK7NATh4k&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=28)
+        - [x] [BST 的实现 —— 在堆栈和堆中的内存分配（视频）](https://www.youtube.com/watch?v=hWokyBoo0aI&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=29)
+        - [x] [在二叉查找树中找到最小和最大的元素（视频）](https://www.youtube.com/watch?v=Ut90klNN264&index=30&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
+        - [x] [寻找二叉树的高度（视频）](https://www.youtube.com/watch?v=_pnqMz5nrRs&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=31)
+        - [x] [二叉树的遍历 —— 广度优先和深度优先策略（视频）](https://www.youtube.com/watch?v=9RHO6jU--GU&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=32)
+        - [x] [二叉树：层序遍历（视频）](https://www.youtube.com/watch?v=86g8jAQug04&index=33&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
+        - [x] [二叉树的遍历：先序、中序、后序（视频）](https://www.youtube.com/watch?v=gm8DUJJhmY4&index=34&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
+        - [x] [判断一棵二叉树是否为二叉查找树（视频）](https://www.youtube.com/watch?v=yEwSGhSsT0U&index=35&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
+        - [x] [从二叉查找树中删除一个节点（视频）](https://www.youtube.com/watch?v=gcULXE7ViZw&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=36)
+        - [x] [二叉查找树中序遍历的后继者（视频）](https://www.youtube.com/watch?v=5cPbNCrdotA&index=37&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
+    - [x] 实现：
+        - [x] [insert    // 将值插入树中](https://leetcode.com/problems/insert-into-a-binary-search-tree/submissions/987660183/)
+        - [x] get_node_count // 查找树上的节点数
+        - [x] print_values // 从小到大打印树中节点的值
+        - [x] delete_tree
+        - [x] is_in_tree // 如果值存在于树中则返回 true
+        - [x] [get_height // 以节点为单位返回高度（单个节点的高度为1）](https://www.geeksforgeeks.org/find-the-maximum-depth-or-height-of-a-tree/)
+        - [x] get_min   // 返回树上的最小值
+        - [x] get_max   // 返回树上的最大值
+        - [x] is_binary_search_tree
+        - [x] delete_value
+        - [x] get_successor // 返回给定值的后继者，若没有则返回-1
 
 - ### 堆（Heap） / 优先级队列（Priority Queue） / 二叉堆（Binary Heap）
     - 以树形结构可视化，但通常在存储上是线性的（数组、链表）
-    - [ ] [堆（Heap）](https://en.wikipedia.org/wiki/Heap_(data_structure))
-    - [ ] [堆简介（视频）](https://www.coursera.org/lecture/data-structures/introduction-2OpTs)
-    - [ ] [二叉树（视频）](https://www.coursera.org/learn/data-structures/lecture/GRV2q/binary-trees)
-    - [ ] [树高度备注（视频）](https://www.coursera.org/learn/data-structures/supplement/S5xxz/tree-height-remark)
-    - [ ] [基本操作（视频）](https://www.coursera.org/learn/data-structures/lecture/0g1dl/basic-operations)
+    - [x] [堆（Heap）](https://en.wikipedia.org/wiki/Heap_(data_structure))
+    - [x] [堆简介（视频）](https://www.coursera.org/lecture/data-structures/introduction-2OpTs)
+    - [x] [二叉树（视频）](https://www.coursera.org/learn/data-structures/lecture/GRV2q/binary-trees)
+    - [x] [树高度备注（视频）](https://www.coursera.org/learn/data-structures/supplement/S5xxz/tree-height-remark)
+    - [x] [基本操作（视频）](https://www.coursera.org/learn/data-structures/lecture/0g1dl/basic-operations)
     - [ ] [完全二叉树（视频）](https://www.coursera.org/learn/data-structures/lecture/gl5Ni/complete-binary-trees)
     - [ ] [伪代码（视频）](https://www.coursera.org/learn/data-structures/lecture/HxQo9/pseudocode)
     - [ ] [堆排序 - 跳转到开始部分（视频）](https://youtu.be/odNJmw5TOEE?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=3291)
