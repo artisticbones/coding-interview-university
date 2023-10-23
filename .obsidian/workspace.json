@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "3713a1cf5970f192",
@@ -143,12 +144,13 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "markdown-importer:打开 Markdown 格式转换器": false
     }
   },
   "active": "f7db3d5cdb1fed32",
   "lastOpenFiles": [
-    "translations/README-bn.md",
-    "translations/README-cn.md"
+    "translations/README-cn.md",
+    "translations/README-bn.md"
   ]
 }
